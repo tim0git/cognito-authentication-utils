@@ -1,10 +1,11 @@
 {
   "name": "cognito-authentication-utils",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "description": "Cognito authentication utils npm package written in TS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "jest --watch"
   },
   "keywords": [],
