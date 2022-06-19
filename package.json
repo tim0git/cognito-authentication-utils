@@ -12,15 +12,12 @@
   "devDependencies": {
     "@types/jest": "^28.1.2",
     "@types/node": "^18.0.0",
-    "@types/typedarray-to-buffer": "^4.0.0",
     "jest": "^28.1.1",
-    "jest-mock-axios": "^4.6.1",
     "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1"
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "Buffer": "^0.0.0",
-    "typedarray-to-buffer": "^4.0.0"
+    "Buffer": "^0.0.0"
   }
 }
