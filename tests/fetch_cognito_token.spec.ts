@@ -1,4 +1,5 @@
-import cognitoAuthenticateClientGrantOauth2 from '../src/utils/cognito_jwt/cognitoAuthenticateClientGrantOauth2'
+import { cognitoAuthenticateClientGrantOauth2 } from '../src/'
+
 const axios = require('axios')
 
 const url: string = 'https://cognito-idp.us-east-1.amazonaws.com/us-east-112345678900'
