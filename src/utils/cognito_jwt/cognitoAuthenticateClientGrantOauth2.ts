@@ -1,5 +1,5 @@
-declare const Buffer: BufferConstructor
 import axios, { AxiosResponse, AxiosInstance, AxiosError } from 'axios'
+const Buffer = require('buffer').Buffer
 
 const cognitoAuthenticateClientGrantOauth2 = async (
     url: string,
