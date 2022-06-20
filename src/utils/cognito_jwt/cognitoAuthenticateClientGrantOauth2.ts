@@ -1,5 +1,5 @@
+declare const Buffer: BufferConstructor
 import axios, { AxiosResponse, AxiosInstance, AxiosError } from 'axios'
-import bufferFrom from 'buffer-from'
 
 const cognitoAuthenticateClientGrantOauth2 = async (
     url: string,
@@ -15,7 +15,7 @@ const cognitoAuthenticateClientGrantOauth2 = async (
         baseURL: url,
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
-            Authorization: 'Basic ' + bufferFrom(clientId + ':' + clientSecret).toString('base64'),
+            Authorization: 'Basic ' + Buffer.from(clientId + ':' + clientSecret).toString('base64'),
         },
     })
 
