@@ -1,9 +1,14 @@
 declare const Buffer: BufferConstructor
 import axios, { AxiosResponse, AxiosInstance, AxiosError } from 'axios'
 
-const fetch_cognito_access_token = async (url: string, clientId: string, clientSecret: string, scope?: string): Promise<string | Error> => {
+const cognitoAuthenticateClientGrantOauth2 = async (
+    url: string,
+    clientId: string,
+    clientSecret: string,
+    scope?: string
+): Promise<string | Error> => {
     if (url === '' || clientId === '' || clientSecret === '') {
-        throw new Error('fetch_cognito_access_token: url, clientId, clientSecret are required')
+        throw new Error('cognitoAuthenticateClientGrantOauth2: url, clientId, clientSecret are required')
     }
 
     const client: AxiosInstance = axios.create({
@@ -26,4 +31,4 @@ const fetch_cognito_access_token = async (url: string, clientId: string, clientS
     }
 }
 
-export default fetch_cognito_access_token
+export default cognitoAuthenticateClientGrantOauth2

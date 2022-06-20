@@ -1,4 +1,3 @@
-import fetch_cognito_access_token from './utils/cognito_jwt/fetch_cognito_access_token'
+import cognitoAuthenticateClientGrantOauth2 from './utils/cognito_jwt/cognitoAuthenticateClientGrantOauth2'
 
-export { fetch_cognito_access_token }
-
+export { cognitoAuthenticateClientGrantOauth2 }
