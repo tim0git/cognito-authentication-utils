@@ -4,7 +4,9 @@
   "description": "Cognito authentication utils npm package written in TS",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest --watch",
@@ -14,6 +16,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/buffer-from": "^1.1.0",
     "@types/jest": "^28.1.2",
     "@types/node": "^18.0.0",
     "jest": "^28.1.1",
@@ -23,6 +26,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
-    "Buffer": "^0.0.0"
+    "Buffer": "^0.0.0",
+    "buffer-from": "^1.1.2"
   }
 }
